@@ -3,9 +3,6 @@
   "name": "datatable",
   "title": "DataTable",
   "description": "Table component",
-  "registryDependencies": [
-    "datatable-core"
-  ],
   "files": [
     {
       "path": "registry/default/datatable/datatable.jsx",
