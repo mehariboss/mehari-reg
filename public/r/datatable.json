@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "datatable",
+  "title": "DataTable",
+  "description": "Table component",
+  "registryDependencies": [
+    "datatable-core"
+  ],
+  "files": [
+    {
+      "path": "registry/default/datatable/datatable.jsx",
+      "content": "export function DataTable({ data, columns }) {\r\n  if (!data || !columns) {\r\n    return <div>Missing data or columns</div>;\r\n  }\r\n\r\n  return (\r\n    <table border=\"1\" cellPadding=\"10\">\r\n      <thead>\r\n        <tr>\r\n          {columns.map((col) => (\r\n            <th key={col.key}>{col.label}</th>\r\n          ))}\r\n        </tr>\r\n      </thead>\r\n\r\n      <tbody>\r\n        {data.map((row, i) => (\r\n          <tr key={i}>\r\n            {columns.map((col) => (\r\n              <td key={col.key}>{row[col.key]}</td>\r\n            ))}\r\n          </tr>\r\n        ))}\r\n      </tbody>\r\n    </table>\r\n  );\r\n}",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

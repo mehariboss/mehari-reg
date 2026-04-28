@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "db",
+  "title": "Database",
+  "description": "Database utilities",
+  "files": [
+    {
+      "path": "registry/default/db/index.js",
+      "content": "let data = [];\r\n\r\nexport function insert(item) {\r\n    if (!item) {\r\n        throw new Error(\"Item is required\");\r\n    }\r\n    data.push(item);\r\n}\r\n\r\nexport function getAll() {\r\n    return data;\r\n}",
+      "type": "registry:lib"
+    }
+  ],
+  "type": "registry:lib"
+}

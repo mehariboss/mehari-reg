@@ -1,0 +1,104 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "mehari",
+  "homepage": "https://mehariboss.github.io/mehari-reg",
+  "items": [
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "Reusable button component",
+      "files": [
+        {
+          "path": "registry/default/button/button.jsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "Reusable card component",
+      "files": [
+        {
+          "path": "registry/default/card/card.jsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "form",
+      "type": "registry:ui",
+      "title": "Form",
+      "description": "Reusable form component",
+      "files": [
+        {
+          "path": "registry/default/form/form.jsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "datatable",
+      "type": "registry:ui",
+      "title": "DataTable",
+      "description": "Table component",
+      "registryDependencies": ["datatable-core"],
+      "files": [
+        {
+          "path": "registry/default/datatable/datatable.jsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "datatable-core",
+      "type": "registry:lib",
+      "title": "DataTable Core",
+      "description": "Core logic for datatable",
+      "files": [
+        {
+          "path": "registry/default/datatable-core/index.js",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "auth",
+      "type": "registry:lib",
+      "title": "Auth",
+      "description": "Authentication utilities",
+      "files": [
+        {
+          "path": "registry/default/auth/index.js",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "logger",
+      "type": "registry:lib",
+      "title": "Logger",
+      "description": "Logging utility",
+      "files": [
+        {
+          "path": "registry/default/logger/index.js",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "db",
+      "type": "registry:lib",
+      "title": "Database",
+      "description": "Database utilities",
+      "files": [
+        {
+          "path": "registry/default/db/index.js",
+          "type": "registry:lib"
+        }
+      ]
+    }
+  ]
+}
