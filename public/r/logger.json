@@ -5,7 +5,7 @@
   "description": "Logging utility",
   "files": [
     {
-      "path": "registry/default/logger/index.js",
+      "path": "registry/default/logger/logger.js",
       "content": "export function createLogger(options = {}) {\r\n  const { prefix = \"LOG\" } = options;\r\n\r\n  return {\r\n    log(message) {\r\n      console.log(`[${prefix}] ${message}`);\r\n    }\r\n  };\r\n}",
       "type": "registry:lib"
     }

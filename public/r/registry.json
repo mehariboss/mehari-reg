@@ -59,7 +59,7 @@
       "description": "Core logic for datatable",
       "files": [
         {
-          "path": "registry/default/datatable-core/index.js",
+          "path": "registry/default/datatable-core/datatable-core.js",
           "type": "registry:lib"
         }
       ]
@@ -71,7 +71,7 @@
       "description": "Authentication utilities",
       "files": [
         {
-          "path": "registry/default/auth/index.js",
+          "path": "registry/default/auth/auth.js",
           "type": "registry:lib"
         }
       ]
@@ -83,7 +83,7 @@
       "description": "Logging utility",
       "files": [
         {
-          "path": "registry/default/logger/index.js",
+          "path": "registry/default/logger/logger.js",
           "type": "registry:lib"
         }
       ]
@@ -95,7 +95,7 @@
       "description": "Database utilities",
       "files": [
         {
-          "path": "registry/default/db/index.js",
+          "path": "registry/default/db/db.js",
           "type": "registry:lib"
         }
       ]

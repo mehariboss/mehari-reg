@@ -5,7 +5,7 @@
   "description": "Core logic for datatable",
   "files": [
     {
-      "path": "registry/default/datatable-core/index.js",
+      "path": "registry/default/datatable-core/datatable-core.js",
       "content": "let config;\r\n\r\nexport function initTable(options) {\r\n  if (!options || !options.columns) {\r\n    throw new Error(\"Columns required\");\r\n  }\r\n  config = options;\r\n}\r\n\r\nexport function process(data, options = {}) {\r\n  if (!config) {\r\n    throw new Error(\"Table not initialized\");\r\n  }\r\n\r\n  let result = [...data];\r\n\r\n  if (options.sort) {\r\n    const { field, direction = \"asc\" } = options.sort;\r\n\r\n    result.sort((a, b) => {\r\n      if (a[field] < b[field]) return direction === \"asc\" ? -1 : 1;\r\n      if (a[field] > b[field]) return direction === \"asc\" ? 1 : -1;\r\n      return 0;\r\n    });\r\n  }\r\n\r\n  return result;\r\n}",
       "type": "registry:lib"
     }
