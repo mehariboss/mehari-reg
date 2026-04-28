@@ -7,7 +7,8 @@
     {
       "path": "registry/default/db/db.js",
       "content": "let data = [];\r\n\r\nexport function insert(item) {\r\n    if (!item) {\r\n        throw new Error(\"Item is required\");\r\n    }\r\n    data.push(item);\r\n}\r\n\r\nexport function getAll() {\r\n    return data;\r\n}",
-      "type": "registry:lib"
+      "type": "registry:lib",
+      "target": "src/lib/db.js"
     }
   ],
   "type": "registry:lib"

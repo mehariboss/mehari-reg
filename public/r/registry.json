@@ -11,6 +11,7 @@
       "files": [
         {
           "path": "registry/default/button/button.jsx",
+          "target": "src/components/ui/button.jsx",
           "type": "registry:ui"
         }
       ]
@@ -23,6 +24,7 @@
       "files": [
         {
           "path": "registry/default/card/card.jsx",
+          "target": "src/components/ui/card.jsx",
           "type": "registry:ui"
         }
       ]
@@ -35,6 +37,7 @@
       "files": [
         {
           "path": "registry/default/form/form.jsx",
+          "target": "src/components/ui/form.jsx",
           "type": "registry:ui"
         }
       ]
@@ -48,6 +51,7 @@
       "files": [
         {
           "path": "registry/default/datatable/datatable.jsx",
+          "target": "src/components/ui/datatable.jsx",
           "type": "registry:ui"
         }
       ]
@@ -60,6 +64,7 @@
       "files": [
         {
           "path": "registry/default/datatable-core/datatable-core.js",
+          "target": "src/lib/datatable-core.js",
           "type": "registry:lib"
         }
       ]
@@ -72,6 +77,7 @@
       "files": [
         {
           "path": "registry/default/auth/auth.js",
+          "target": "src/lib/auth.js",
           "type": "registry:lib"
         }
       ]
@@ -84,6 +90,7 @@
       "files": [
         {
           "path": "registry/default/logger/logger.js",
+          "target": "src/lib/logger.js",
           "type": "registry:lib"
         }
       ]
@@ -96,6 +103,7 @@
       "files": [
         {
           "path": "registry/default/db/db.js",
+          "target": "src/lib/db.js",
           "type": "registry:lib"
         }
       ]

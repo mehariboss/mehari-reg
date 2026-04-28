@@ -7,7 +7,8 @@
     {
       "path": "registry/default/form/form.jsx",
       "content": "import {useState} from 'react';\r\n\r\nexport function Form({onSubmit,children}) {\r\n    return <form onSubmit={onSubmit}>{children}</form>;\r\n}\r\n\r\nexport function Input({label, value, onChange, error}) {\r\n\r\n    return(\r\n        <div style={{marginBottom: \"10px\"}}>\r\n            <label>{label}</label>\r\n            <input\r\n                value={value}\r\n                onChange={(e) => onChange(e.target.value)}\r\n                style={{display: \"block\", padding: \"8px\", width: \"100%\"}}\r\n            \r\n            />\r\n            {error && <span style={{color: \"red\"}}>{error}</span>}\r\n        </div>\r\n    );\r\n\r\n\r\n}",
-      "type": "registry:ui"
+      "type": "registry:ui",
+      "target": "src/components/ui/form.jsx"
     }
   ],
   "type": "registry:ui"

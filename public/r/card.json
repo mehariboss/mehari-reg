@@ -7,7 +7,8 @@
     {
       "path": "registry/default/card/card.jsx",
       "content": "export function Card({ children, className = \"\" }) {\r\n  return (\r\n    <div\r\n      className={className}\r\n      style={{\r\n        border: \"1px solid #ccc\",\r\n        borderRadius: \"8px\",\r\n        padding: \"20px\",\r\n        marginTop: \"20px\",\r\n        backgroundColor: \"#fff\",\r\n        color: \"#000\",\r\n        maxWidth: \"500px\",\r\n      }}\r\n    >\r\n      {children}\r\n    </div>\r\n  );\r\n}\r\n\r\nexport function CardHeader({ children }) {\r\n  return (\r\n    <div style={{ fontSize: \"20px\", fontWeight: \"bold\", marginBottom: \"10px\" }}>\r\n      {children}\r\n    </div>\r\n  );\r\n}\r\n\r\nexport function CardContent({ children }) {\r\n  return (\r\n    <div style={{ marginBottom: \"10px\" }}>\r\n      {children}\r\n    </div>\r\n  );\r\n}",
-      "type": "registry:ui"
+      "type": "registry:ui",
+      "target": "src/components/ui/card.jsx"
     }
   ],
   "type": "registry:ui"
