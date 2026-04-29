@@ -8,8 +8,8 @@ export function Button({
   className = "",
 }) {
   const styles = {
-    primary: { backgroundColor: "red", color: "white" },
-    secondary: { backgroundColor: "gray", color: "white" },
+    primary: { backgroundColor: "green", color: "white" },
+    secondary: { backgroundColor: "green", color: "white" },
   };
 
   const sizes = {
