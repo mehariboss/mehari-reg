@@ -6,7 +6,7 @@
   "files": [
     {
       "path": "registry/default/datatable/datatable.jsx",
-      "content": "export function DataTable({ data, columns }) {\r\n  if (!data || !columns) {\r\n    return <div>Missing data or columns</div>;\r\n  }\r\n\r\n  return (\r\n    <table border=\"1\" cellPadding=\"10\">\r\n      <thead>\r\n        <tr>\r\n          {columns.map((col) => (\r\n            <th key={col.key}>{col.label}</th>\r\n          ))}\r\n        </tr>\r\n      </thead>\r\n\r\n      <tbody>\r\n        {data.map((row, i) => (\r\n          <tr key={i}>\r\n            {columns.map((col) => (\r\n              <td key={col.key}>{row[col.key]}</td>\r\n            ))}\r\n          </tr>\r\n        ))}\r\n      </tbody>\r\n    </table>\r\n  );\r\n}",
+      "content": "export function DataTable({ data, columns }) {\n  if (!data || !columns) {\n    return <div>Missing data or columns</div>;\n  }\n\n  return (\n    <table border=\"1\" cellPadding=\"10\">\n      <thead>\n        <tr>\n          {columns.map((col) => (\n            <th key={col.key}>{col.label}</th>\n          ))}\n        </tr>\n      </thead>\n\n      <tbody>\n        {data.map((row, i) => (\n          <tr key={i}>\n            {columns.map((col) => (\n              <td key={col.key}>{row[col.key]}</td>\n            ))}\n          </tr>\n        ))}\n      </tbody>\n    </table>\n  );\n}",
       "type": "registry:ui",
       "target": "src/components/ui/datatable.jsx"
     }

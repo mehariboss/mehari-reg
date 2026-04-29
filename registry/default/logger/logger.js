@@ -4,7 +4,7 @@ export function createLogger(options = {}) {
   return {
     log(message) {
       const timestamp = new Date().toISOString();
-      console.log(`[${timestamp}] [${prefix}] ${message}`);
+      console.log(`[${timestamp}] [${prefix}] ${message} test2`);
     }
   };
 }

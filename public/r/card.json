@@ -6,7 +6,7 @@
   "files": [
     {
       "path": "registry/default/card/card.jsx",
-      "content": "export function Card({ children, className = \"\" }) {\r\n  return (\r\n    <div\r\n      className={className}\r\n      style={{\r\n        border: \"1px solid #ccc\",\r\n        borderRadius: \"8px\",\r\n        padding: \"20px\",\r\n        marginTop: \"20px\",\r\n        backgroundColor: \"#fff\",\r\n        color: \"#000\",\r\n        maxWidth: \"500px\",\r\n      }}\r\n    >\r\n      {children}\r\n    </div>\r\n  );\r\n}\r\n\r\nexport function CardHeader({ children }) {\r\n  return (\r\n    <div style={{ fontSize: \"20px\", fontWeight: \"bold\", marginBottom: \"10px\" }}>\r\n      {children}\r\n    </div>\r\n  );\r\n}\r\n\r\nexport function CardContent({ children }) {\r\n  return (\r\n    <div style={{ marginBottom: \"10px\" }}>\r\n      {children}\r\n    </div>\r\n  );\r\n}",
+      "content": "export function Card({ children, className = \"\" }) {\n  return (\n    <div\n      className={className}\n      style={{\n        border: \"1px solid #ccc\",\n        borderRadius: \"8px\",\n        padding: \"20px\",\n        marginTop: \"20px\",\n        backgroundColor: \"#fff\",\n        color: \"#000\",\n        maxWidth: \"500px\",\n      }}\n    >\n      {children}\n    </div>\n  );\n}\n\nexport function CardHeader({ children }) {\n  return (\n    <div style={{ fontSize: \"20px\", fontWeight: \"bold\", marginBottom: \"10px\" }}>\n      {children}\n    </div>\n  );\n}\n\nexport function CardContent({ children }) {\n  return (\n    <div style={{ marginBottom: \"10px\" }}>\n      {children}\n    </div>\n  );\n}",
       "type": "registry:ui",
       "target": "src/components/ui/card.jsx"
     }
