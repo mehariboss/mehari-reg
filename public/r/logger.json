@@ -6,7 +6,7 @@
   "files": [
     {
       "path": "registry/default/logger/logger.js",
-      "content": "export function createLogger(options = {}) {\n  const { prefix = \"LOG\" } = options;\n\n  return {\n    log(message) {\n      const timestamp = new Date().toISOString();\n      console.log(`[${timestamp}] [${prefix}] ${message} test2`);\n    }\n  };\n}",
+      "content": "export function createLogger(options = {}) {\n  const { prefix = \"LOG\" } = options;\n\n  return {\n    log(message) {\n      console.log(`[${prefix}] ${message}`);\n    }\n  };\n}",
       "type": "registry:lib",
       "target": "src/lib/logger.js"
     }
