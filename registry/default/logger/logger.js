@@ -3,9 +3,8 @@ export function createLogger(options = {}) {
 
   return {
     log(message) {
-      console.log(`[${prefix}] ${message}`);
+      const timestamp = new Date().toISOString();
+      console.log(`[${timestamp}] [${prefix}] ${message}`);
     }
   };
 }
-
-
